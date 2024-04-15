@@ -10,7 +10,7 @@ export default function Board() {
       const nextSquares = squares.slice();
       if ((lastIdx === null || squares[lastIdx] === 'O')  &&nextSquares[idx] === null) {
         nextSquares[idx] = 'X'
-      } else if (squares[lastIdx] === 'X' &&nextSquares[idx] === null){
+      } else if (squares[lastIdx] === 'X' && nextSquares[idx] === null){
         nextSquares[idx] = 'O'
       }
       setSquares(nextSquares)
